@@ -12,6 +12,10 @@ body{
     box-sizing: border-box;
 }
 
+:root{
+    --main-color: #fe4a46;
+}
+
 ul{
     list-style: none;
 }
@@ -23,11 +27,107 @@ ul{
 
 /* End Initaial Styles */
 
+/* Navbar */
+
+nav.navbar{
+    position: sticky;
+    top: 0;
+    background-color: #fafafa;
+    border-bottom: 1px solid #99999980;
+    z-index: 10000000;
+}
+
+nav.navbar .container img{
+    margin: 10px 0;
+}
+
+nav.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar .container ul.links{
+    display: flex;
+    gap: 10px;
+}
+
+nav.navbar .container ul.links li a{
+    padding: 10px;
+    background-color: #eee;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    font-size: 15px;
+    border-radius: 2px;
+    transition: .2s;
+}
+
+nav.navbar .container ul.links li a:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+nav.navbar .container .sm-menu{
+    position: relative;
+    display: none;
+}
+
+nav.navbar .container .sm-menu i{
+    font-size: 22px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+nav.navbar .container .sm-menu .sm-dropdown{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: var(--main-color);
+    width: 200px;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    z-index: 10000001;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: .3s;
+}
+
+nav.navbar .container .sm-menu .sm-dropdown li a{
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    transition: .2s;
+    border-bottom: 1px solid #eeeeee50;
+}
+
+nav.navbar .container .sm-menu .sm-dropdown li a:hover{
+    padding-left: 15px;
+}
+
+nav.navbar .container .sm-menu:hover > .sm-dropdown{
+    transform: scaleX(1);
+}
+
+/* End Navbar */
+
 /* Media Queries */
 
 @media (max-width: 767px){
     .container{
         width: 100%;
+    }
+    nav.navbar .container .sm-menu{
+        display: block;
+    }
+    nav.navbar .container ul.links{
+        display: none;
     }
 }
 
