@@ -2,7 +2,7 @@
 * Website Design
 * Sections:
   * [x] Navbar
-  * [ ] Header
+  * [x] Header
   * [ ] Services
   * [ ] Portfolio
   * [ ] About
