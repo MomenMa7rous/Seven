@@ -14,6 +14,7 @@ body{
 
 :root{
     --main-color: #fe4a46;
+    --section-padding: 70px;
 }
 
 ul{
@@ -116,6 +117,56 @@ nav.navbar .container .sm-menu:hover > .sm-dropdown{
 }
 
 /* End Navbar */
+
+section.header{
+    
+    background: url("../images/Slider.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--main-color);
+}
+
+section.header .overlay{
+    padding: 130px 0;
+    background-color: #333333ab;
+}
+
+section.header .overlay .container .text{
+    color: #fff;
+    padding-left: 20px;
+    border-left: 3px solid var(--main-color);
+}
+
+section.header .overlay .container .text h4{
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid var(--main-color);
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+section.header .overlay .container .text h1{
+    font-size: 40px;
+    margin: 10px 0 20px;
+    font-weight: 600;
+}
+
+section.header .overlay .container .text a{
+    display: block;
+    width: fit-content;
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    border-radius: 2px;
+    transition: .2s;
+}
+
+section.header .overlay .container .text a:hover{
+    background-color: transparent;
+}
 
 /* Media Queries */
 
