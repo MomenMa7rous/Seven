@@ -4,7 +4,7 @@
   * [x] Navbar
   * [x] Header
   * [x] Services
-  * [ ] Portfolio
+  * [x] Portfolio
   * [ ] About
   * [ ] News
   * [ ] Contact
