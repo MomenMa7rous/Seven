@@ -3,7 +3,7 @@
 * Sections:
   * [x] Navbar
   * [x] Header
-  * [ ] Services
+  * [x] Services
   * [ ] Portfolio
   * [ ] About
   * [ ] News
