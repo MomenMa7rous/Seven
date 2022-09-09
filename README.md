@@ -5,7 +5,7 @@
   * [x] Header
   * [x] Services
   * [x] Portfolio
-  * [ ] About
+  * [x] About
   * [ ] News
   * [ ] Contact
   * [ ] Footer
