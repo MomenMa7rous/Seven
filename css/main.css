@@ -589,6 +589,119 @@ section.team .members .box span.job{
 
 /* End Team Section */
 
+/* News Section */
+
+section.news{
+    position: relative;
+    background: url("../images/blog-section.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: var(--section-padding) 0;
+}
+
+section.news .container .special-heading h1{
+    color: #fff;
+}
+
+section.news .container .special-heading h1::first-letter{
+    border-color: #fff;
+}
+
+section.news .container .special-heading h1::after{
+    background-color: #fff;
+}
+
+section.news .container .special-heading p{
+    color: #ffffff99;
+}
+
+section.news .container .posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+section.news .container .posts .post{
+    background-color: #111111e3;
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+section.news .container .posts .post .text{
+    padding: 20px;
+}
+
+section.news .container .posts .post .text h3.title{
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+section.news .container .posts .post .text p{
+    color: #ffffffab;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: var(--main-line-height);
+    margin-bottom: 20px;
+}
+
+section.news .container .posts .post .text a{
+    display: block;
+    text-align: end;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+section.news .container .posts .post .text a:hover{
+    text-decoration: underline;
+}
+
+section.news .container .posts .post .image{
+    background-color: #000000dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 200px;
+}
+
+section.news .container .posts .post .image img{
+    width: 100%;
+    transition: .2s;
+}
+
+section.news .container .posts .post:hover img{
+    transform: scale(1.1);
+}
+
+section.news .container > a{
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid var(--main-color);
+    transition: .2s;
+}
+
+section.news .container > a:hover{
+    background-color: transparent;
+}
+
+/* End News Section */
+
 /* Media Queries */
 
 @media (max-width: 767px){
