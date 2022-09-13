@@ -702,6 +702,123 @@ section.news .container > a:hover{
 
 /* End News Section */
 
+/* Contact Section */
+
+section.contact{
+    padding: var(--section-padding) 0;
+}
+
+section.contact form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px;
+}
+
+section.contact form *{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+
+section.contact form input,
+section.contact form textarea{
+    border: 1px solid transparent;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus{
+    border-color: #000000dc;
+    background-color: #f1f1f1;
+}
+
+section.contact form textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 250px;
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder{
+    transition: .2s;
+}
+
+section.contact form input:focus::placeholder,
+section.contact form textarea:focus::placeholder{
+    opacity: 0;
+}
+
+section.contact form button{
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    align-self: flex-start;
+    padding: 14px 20px;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+}
+
+section.contact form button:hover{
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+section.contact form .row{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0;
+}
+
+section.contact .contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+section.contact .contact-info .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.contact .contact-info .box span.icon{
+    display: block;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+section.contact .contact-info .box span.info{
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+}
+
+/* End Contact Section */
+
 /* Media Queries */
 
 @media (max-width: 767px){

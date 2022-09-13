@@ -7,6 +7,6 @@
   * [x] Portfolio
   * [x] About
   * [x] News
-  * [ ] Contact
+  * [x] Contact
   * [ ] Footer
 * [Live Demo](#)
