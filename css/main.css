@@ -722,7 +722,7 @@ section.contact form *{
     width: 100%;
     padding: 20px;
     font-family: 'Raleway', sans-serif;
-    border-radius: 2px;
+    border-radius: 3px;
     border: none;
     outline: none;
     transition: .2s;
@@ -784,7 +784,6 @@ section.contact form .row{
 section.contact .contact-info{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 50px;
 }
@@ -795,6 +794,8 @@ section.contact .contact-info .box{
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-bottom: 2px solid #99999980;
+    padding-bottom: 20px;
 }
 
 section.contact .contact-info .box span.icon{
@@ -819,6 +820,103 @@ section.contact .contact-info .box span.info{
 
 /* End Contact Section */
 
+/* Footer */
+
+footer{
+    background-color: #000000dc;
+    padding: var(--section-padding) 0;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .special-heading{
+    margin-bottom: 20px;
+}
+
+footer .container .special-heading h1{
+    color: #fff;
+}
+
+footer .container .special-heading h1::first-letter{
+    border-color: #fff;
+}
+
+footer .container .special-heading h1::after{
+    background-color: #fff;
+}
+
+footer .container .special-heading p{
+    color: #ffffff99;
+}
+
+footer .container .special-heading h1 span{
+    font-size: 30px;
+    letter-spacing: -2px;
+    font-weight: 400;
+}
+
+footer .container .special-heading p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+footer .container .special-heading p a:hover{
+    text-decoration: underline;
+}
+
+footer .container ul.social{
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #ffffff80;
+    padding-top: 10px;
+    margin-bottom: 25px;
+}
+
+footer .container ul.social li a{
+    color: #fff;
+    font-size: 13px;
+    transition: .2s;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer .container ul.social li a:hover{
+    background-color: var(--main-color);
+}
+
+footer .container > a:last-child{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    width: 51px;
+    height: 51px;
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
+    transition: .2s;
+}
+
+footer .container > a:last-child:hover{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+/* End Footer */
+
 /* Media Queries */
 
 @media (max-width: 767px){
@@ -836,6 +934,19 @@ section.contact .contact-info .box span.info{
     }
     section.team .members .box .info p{
         font-size: 13px;
+    }
+    section.contact form .row{
+        flex-direction: column;
+    }
+    section.contact form *{
+        padding: 15px;
+    }
+    section.contact form button{
+        padding: 9px;
+    }
+    section.contact .contact-info .box span.icon{
+        width: 65px;
+        height: 65px;
     }
 }
 

@@ -8,5 +8,5 @@
   * [x] About
   * [x] News
   * [x] Contact
-  * [ ] Footer
+  * [x] Footer
 * [Live Demo](#)
